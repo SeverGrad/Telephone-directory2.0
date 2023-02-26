@@ -18,8 +18,6 @@ func.main_menu()
 
 num = int(input('Введите номер команды: '))
 
-
-
 while True:
     if num == 1:
         func.search_phone()
@@ -44,41 +42,41 @@ while True:
                 func.search_first_name()
     elif num == 4:
         func.menu_update()
-        num = int(input('Введите номер команды: '))
-        if num == 1:
+        sonum = int(input('Введите номер команды: '))
+        if sonum == 1:
             func.update_numberPhones_by_id() 
-            while num == 1:
+            while sonum == 1:
                 func.menu_update()
-                num = int(input('Введите номер команды: '))
-                if num == 1:
+                sonum = int(input('Введите номер команды: '))
+                if sonum == 1:
                     func.update_numberPhones_by_id() 
-        elif num == 2:
+        elif sonum == 2:
             func.update_email_by_id()
-            while num == 2:
+            while sonum == 2:
                 func.menu_update()
-                num = int(input('Введите номер команды: '))
-                if num == 2:
+                sonum = int(input('Введите номер команды: '))
+                if sonum == 2:
                     func.update_email_by_id()
-        elif num == 3:
+        elif sonum == 3:
             func.delete_numberPhones_by_id()
-            while num == 3:
+            while sonum == 3:
                 func.menu_update()
-                num = int(input('Введите номер команды: '))
-                if num == 3:
+                sonum = int(input('Введите номер команды: '))
+                if sonum == 3:
                     func.delete_numberPhones_by_id()
-        elif num == 4:
+        elif sonum == 4:
             func.delete_email_by_id()
-            while num == 4:
+            while sonum == 4:
                 func.menu_update()
-                num = int(input('Введите номер команды: '))
-                if num == 4:
+                sonum = int(input('Введите номер команды: '))
+                if sonum == 4:
                     func.delete_email_by_id()
-        elif num == 5:
+        elif sonum == 5:
             func.delete_contact_by_id2()
-            while num == 5:
+            while sonum == 5:
                 func.menu_update()
-                num = int(input('Введите номер команды: '))
-                if num == 5:
+                sonum = int(input('Введите номер команды: '))
+                if sonum == 5:
                     func.delete_contact_by_id2()
         elif num == 0:
             func.main_menu()
